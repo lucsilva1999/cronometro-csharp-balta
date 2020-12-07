@@ -21,7 +21,7 @@ namespace Cronometro
                 Limpar();
                 currentTime++;
                 Console.WriteLine(currentTime);
-                Thread.Sleep(1000);
+                Sleep();
                 
             }
         }   
@@ -30,6 +30,11 @@ namespace Cronometro
 
             Console.Clear();
 
+        }
+
+        static void Sleep(){
+
+            Thread.Sleep(1000);
         }
     }
 }
